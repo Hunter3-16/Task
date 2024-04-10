@@ -1,0 +1,83 @@
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: opacity 0.3s ease; 
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-options input[type="text"],
+.filter-options select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  color: #333;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-options input[type="text"]:focus,
+.filter-options select:focus {
+  background-color: #e1e1e1;
+}
+
+.character-card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background-color:black;
+  border: 5px #ffc107 solid;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out, border-color 0.3s ease, background-color 0.3s ease; 
+  text-align: center; 
+  cursor: pointer;
+}
+
+.character-card.droid {
+  background-color: green; 
+}
+
+.character-card:hover {
+  transform: scale(1.05); 
+  border-color: #ffc107; 
+}
+
+.character-card img {
+  border-radius: 5px;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease; 
+}
+
+.pagination button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #ff9800; 
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #ffc107;
+}

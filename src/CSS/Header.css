@@ -1,0 +1,24 @@
+.header {
+    background-color: #000;
+    color: #ffc107;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif; 
+  }
+  
+  .header-title {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .header-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #ffc107;
+    margin: 10px auto;
+  }
+  
